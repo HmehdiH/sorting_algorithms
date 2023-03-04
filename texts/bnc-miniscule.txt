@@ -1,0 +1,200 @@
+
+
+ 
+
+Have you done much work?
+I've done some work.
+I've tried 
+Good.
+to sort of 
+Good.
+what the hell I was supposed to do with .
+What were you doing ?
+There's some I'm totally totally confused on .
+You were doing differentiating 
+ 
+and then
+Yeah.
+leaving it and then going back to it to see if you could integrate it plus some graphs .
+Some of it.
+Yeah.
+No no I don't know what I've done with the graph.
+I've been concentrating on trying to
+Okay.
+I've gone through these I don't know how many times.
+Right.
+I done them  and then I've took them down and I've gone back.
+I've g I've got about a half a dozen sheets of paper scattered all over the place, and I've decided to do it in this cos then I can just go to  here.
+Right.
+So I've done that.
+Now I can understand that, understand that.
+Right.
+That goes to that, two X, but I'm not sure why.
+Now is that that cosh squared X ?
+Yeah.
+Right.
+And that is  goes to two X.
+ shine squared X.
+You mean do you mean  ?
+No.
+It's two X in the book.
+Yeah.
+Okay.
+Now he does make mistakes so that's not a 
+Erm  
+problem.
+Mm.
+And then there's That I can understand.
+But that is actually is not like that.
+That's X squared but when it's differentiated cos you've gotta go back into the bracket it comes out as that.
+Right.
+And that then goes in  
+Okay.
+that.
+So I understand that bit.
+What you're doing I mean you're coming along very well really.
+But  
+Aren't you?
+I'm not doing too bad.
+I think you're doing very well 
+But its like that.
+I don't get Y to twelve.
+I mean I know th I know that you carry the sine on because 
+Mm.
+it goes to sine squared, so you you only differentiate one and according to 
+Okay.
+that goes to sine squared.
+Right  where your twelve comes from.
+Well it it must be three times four is equal 
+Right.
+to twelve.
+Okay.
+But it doesn't always go to the front of them.
+Like here.
+Yeah.
+Well 
+The use of the the two X.
+So I'm not conversant with all the rules.
+Mm.
+Okay.
+Erm  how did you differentiate these?
+I mean are you learning these as they are or  I mean 
+No.
+do them?
+How are you doing it?
+No I've I've just All I've done is because  Erm  because that is a function of that
+Right.
+I've differentiated that.
+Well I didn't differentiate it but I but I did because I couldn't decide .
+As I as I was talking about for a new pattern  
+.
+how much you want to write it in there, it's up to you.
+Just show me how you did that one.
+Well, all I 
+That one 
+did was that I didn't know whether to do three sine squared  right ?
+Mm.
+Then differentiate the four X because 
+ 
+that's your X  value.
+So that'd be three times the four sine squared.
+Then to differentiate the whole lot because it goes to cos.
+Mm.
+And that is is is not what I get cos what I was doing is doing them meself and then 
+Well what Yeah.
+What 
+going and checking the answer.
+Erm
+And then if me answer was wrong trying to 
+Mm.
+work out  .
+Can you describe  your methods.
+How you how you'd do that.
+Sort of writing down as many steps as you can.
+Ah.
+That's why i couldn't I thought I hadn't got me pen.
+Erm well all 
+Draw a nice picture instead.
+All I did is I look at what I've got and if it's just a single term like that 
+Right.
+then you 
+Yeah.
+know to just differentiate it.
+When it's two terms  like the the log erm and what  like that
+Mm.
+each of the two X multiplied by sine.
+Okay.
+That brings on another rule.
+Like that 
+Okay 
+brings another rule.
+Erm  differentiate this for me then.
+Er  three X squared  plus two.
+And put some brackets round that and raise that to the power five.
+Okay Y 
+ 
+equals that.
+Sh show 
+.
+me all the steps.
+Divide by D X  two.
+That goes at the front, right?
+Mm.
+To begin with.
+Right.
+Now you get erm  three X squared plus two and then you differentiate What's in there, which'll give you  six.
+So if you multiply it by six and it's still raised to the power .
+If you differentiate three X squared what do you get?
+Six.
+Differentiate 
+Six X.
+Right.
+Now.
+.
+Okay.
+Right.
+That's, that's the method.
+Now why're you doing this?
+What's the theory behind it?
+Dunno.
+Right.
+Now what you're doing, or what you're, you're attempting to do  erm if I say Y equals P  
+Hmm.
+Find D Y by the X.
+And you can't cos you haven't 
+ 
+got a you haven't got an X in sight.
+Mm.
+Now what you've got here is Y equals U to the power five.
+Yeah.
+Right?
+Now there isn't an X in sight.
+Mm.
+I've only got three X squared plus two there but you can't differentiate whit respect to three X squared plus two and then say you actually done it with respect to X .
+ 
+So  erm you've seen the cha chain rule function and a function.
+Mm.
+This is, this is what you should be doing with it really.
+Erm we've got that.
+Y equals that.
+Yeah.
+Right.
+Let U  three X squared plus two.
+Okay.
+ 
+Now we've got  Y equals U to the power five.
+So we c can't find D Y by D X
+Mhm.
+But we can find D Y by D U.
+Right?
+Which is no problem.
+Mhm.
+Five by D to the four.
+Yes?
+Mhm.
+Well that's found D Y by D U but what we're looking for is D Y by D X.
+And D Y by D X  is what?
+In terms of U and everything else.
+Remember what that bit?
+How to work that out?
+Erm isn't it the  U .

@@ -1,0 +1,152 @@
+Text indexing
+=============
+
+Time spent per group member:
+* Theodor Ahlgren: 6h
+* Mehdi Haidari: 6h
+* Baseer Qayoumi: 5h
+
+Part 1: Insertion sort and quicksort
+------------------------------------
+
+**Question**
+Consider the following combinations of algorithms and kinds of input:
+(a) insertion sort, random input
+(b) insertion sort, sorted input
+(c) quicksort, first element pivot, random input
+(d) quicksort, first element pivot, sorted input
+(e) quicksort, random pivot, sorted input
+
+Time each case with the benchmarking program `sorting.Test` on lists of these sizes: 1000, 10000, 100000.
+Hints:
+* Sorted means randomness=0 and random means randomness=1.
+* If you get a StackOverflowError, increase the stack memory available when running the Java program.
+  10 MB should be enough, for this you would pass this VM argument: -Xss10M
+
+Use this to decide which of the two growth rate scenarios fits the runtime better:
+(1) close to linear (e.g. Θ(n) or Θ(n log(n)))
+(2) close to quadratic (e.g. Θ(n^2))
+
+| Case | T(1000) | T(10,000) | T(100,000) | (1) or (2)? |
+|------|---------|-----------|------------|-------------|
+| (a)  |  19,5ms |   472ms   |   30800ms  |    2        |
+| (b)  | 0,513ms |     1,86ms|    7,18ms  |   1         |
+| (c)  |   1,95ms|  6,65ms   |     52ms   |   1         | Changed to linear since the time complexity of multi-key quicksort: O(n log3 n) = O(n) is linear.
+| (d)  |  1,89ms | 389ms     | overflow   |    2        |
+| (e)  | 2,89ms  | 8,73ms    |    45,6ms  |     1       |
+
+Are there disagreements between this experimental data and your theoretical knowledge?
+
+    No
+
+Parts 2 and 4: Building the suffix array
+----------------------------------------
+
+**Question**
+How long does it take to sort the suffix array using the following algorithms?
+Abort an algorithm (and skip the rest of its column) once it runs for longer than 100s.
+
+| Text file               | Characters | insertion sort | quicksort | multi-key quicksort |
+|-------------------------|------------| ---------------|-----------|---------------------|
+| texts/bnc-miniscule.txt |      5,000 |      164ms     |  15,1ms   |         20,1ms      |
+| texts/bnc-tiny.txt      |    100,000 |    36,4s       |  85,8ms   |         99,3ms      |
+| texts/bnc-mini.txt      |  2,100,000 |     >100s      |  1,45s    |         1,3s        |
+| texts/bnc-small.txt     |  5,700,000 |   >100s        | 4,49s     |         3,81s       |
+| texts/bnc-medium.txt    | 20,000,000 |   >100s        | 18,9s     |         14,8s       |
+| texts/bnc-large.txt     | 57,000,000 |    >100s       | 66,1s     |      StackOverflow  |
+
+Pivot strategy used:
+* quicksort: FIRST
+* multi-key quicksort: FIRST
+
+Does this match your knowledge about the asymptotic complexities of insertion sort and quicksort?
+
+    yes
+
+Based on the above data, do quicksort and multi-key quicksort have the same asymptotic complexity?
+Justify briefly.
+
+    We can tell by looking at the table that on smaller files the quicksort does better
+    but the bigger the file, the better multi-key quicksort does, which means multi-keysort has a smaller
+    time complexity.
+
+By what factor is multi-key quicksort faster when compared to quicksort?
+    Quicksort: n * log2 n
+    Multi-key quicksort: n * log3 n
+
+    The factor between nlog2n and nlog3n is somewhere around log3 / log23, which is about 1.26186
+    nlog3n is about 1.26 times faster than nlog2n
+
+How long do you predict multi-key quicksort to take for texts/bnc-full.txt?
+It contains ca. 570 million characters.
+
+    200s
+
+Part 3: Searching using the suffix array
+----------------------------------------
+
+**Question**
+How many string comparisons does one search query in bnc-large.txt perform?
+Explain briefly why (with reference to functions in the code).
+
+    Since we are using a binary search (BinarySearch.findIntervalStart()) we will do log n searches
+    since the time-complexity for our binary search is O(log n).
+    log2 57.000.000 = 26
+
+    And then we use binary search (BinarySearch.findIntervalStart()) to binary search
+    for the last instance of the element, which again is of O(log n) complexity.
+    log2 57.000.000 = 26
+
+    26 + 26 = 52 comparisons
+
+
+
+**Question**
+The first number `RunSearchPrompt` prints on each line is the position of each search result.
+As you can see, these numbers are not ordered: they seem to be random.
+Why do you think the results are not shown in increasing order of position?
+
+    It is because words are ordered by the following characters.
+    We have structured the instances of the strings in the text by the following letters.
+
+    With the example "hat". The characters following hat determines the ordering.
+    hat followed by a big A that has position 5000 in the suffixarray comes before hat followed by B with position 5 in the
+    suffixarray.
+
+**Question**
+What could be done to fix this?
+
+    We could store all the matches in a list together with their instances in the storedSuffixArray (the lowest position in the storedSuffixarray)
+    and from there print them out with the lowest position first.
+
+Appendix: general information
+=============================
+
+**Questions**
+Which spoilers did you use?
+
+    None for the first three tasks, but for Task four we used all spoilers.
+
+**Question**
+Do you know of any bugs or limitations?
+
+    Maybe when you use the multipkeysort on strings that are identical.
+
+**Question**
+Did you collaborate with any other students on this lab?
+If so, write with whom and in what way you collaborated.
+Also list any resources (including the web) you have used in creating your design.
+
+    We used the provided wikipedia page to read about suffix arrays.
+
+**Question**
+Did you encounter any serious problems?
+
+    Yes, we had problems to get our multikeyquicksort to work. We had some small offset bugs in our recursive calls
+    that took ages to figure out. We also had a problem with stackOverflow
+
+**Question**
+What is your feedback on this assignment?
+
+
+
